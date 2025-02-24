@@ -4,10 +4,10 @@ import ProjectCard from "././components/VisionCards";
 import Particle from "./Particle";
 // import leaf from "./Assets/Projects/leaf.png";
 // import emotion from "./assets/Projects/emotion.png";
-import editor from "./Assets/Projects/ho.jpg";
-import chatify from "./Assets/Projects/bottle.jpg";
+import editor from "./assets/Projects/ho.jpg";
+import chatify from "./assets/Projects/bottle.jpg";
 // import suicide from "./Assets/Projects/suicide.png";
-import bitsOfCode from "./Assets/Projects/Ar.jpg";
+import bitsOfCode from "./assets/Projects/Ar.jpg";
 
 function Vision() {
   return (
