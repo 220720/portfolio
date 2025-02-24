@@ -5,7 +5,9 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
+import Vision from "./Vision";
 import Footer from "./Footer";
+import Blogs from "./Blogs";
 import ScrollToTop from "./ScrollToTop";
 import "./style.css";
 import "./App.css";
@@ -31,8 +33,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-         
+          <Route path="/vision" element={<Vision />} />
           <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/Blogs" element={<Blogs/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

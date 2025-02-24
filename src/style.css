@@ -259,13 +259,14 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: url(assets/pic1.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  min-height: 100vh;
 }
-
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
@@ -477,10 +478,12 @@ button:focus {
 
 .blog-card {
   padding-top: 50px !important;
+  display: grid !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
-  height: auto !important;
+  /* height: auto !important; */
+  gap: 0px !important;
 }
 
 .blog-card-view {
@@ -488,7 +491,7 @@ button:focus {
   box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  height: 70% !important;
 }
 
 .blog-link {
@@ -743,3 +746,142 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+.blogs-container {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.blogs-title {
+  text-align: center !important;
+  /* font-size: 2rem !important; */
+  color: white !important;
+  margin-bottom: 4px !important;
+}
+.blogs-grid-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+.blogs-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 20px !important;
+  padding: 20px 120px !important;
+  height: auto !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.blog-card {
+  /* padding: 2px  !important; */
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  text-align: center !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  transition: all 0.5s ease 0s !important;
+}
+
+.blog-card:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.blog-img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 250px !important; /* Adjust max height as needed */
+  object-fit: cover !important; /* Ensures the image maintains its aspect ratio and covers the area */
+  border-radius: 10px !important;
+}
+
+
+
+.blog-title {
+  font-size: 1.5rem !important;
+  margin-top: 15px !important;
+  color: white !important;
+}
+
+.blog-description {
+  font-size: 1rem !important;
+  margin-top: 10px !important;
+  color: white !important;
+}
+
+.blog-arrow {
+  margin-top: 15px !important;
+  font-size: 1.5rem !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.featured-story {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important; /* Two equal columns */
+  gap: 20px !important; /* Adds spacing between elements */
+  align-items: center !important;
+  margin: 50px auto !important; /* Centers horizontally */
+  /* padding: 2px !important; */
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  max-width: 1100px !important; /* Limits the width */
+  width: 90% !important; /* Makes it responsive */
+  transition: all 0.3s ease-in-out !important; /* Smooth transition */
+}
+
+/* Hover Effect */
+.featured-story:hover {
+  transform: scale(1.02) !important; /* Slightly enlarges */
+  box-shadow: 0 6px 10px 5px rgba(129, 72, 144, 0.561) !important; /* Adds depth */
+  background: rgba(255, 255, 255, 0.15) !important; /* Slightly brightens */
+}
+
+.story-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important; /* Adds spacing between text elements */
+  color: white !important;
+}
+
+.story-title {
+  font-size: 1.8rem !important;
+  margin-bottom: 10px !important;
+}
+
+.story-link {
+  font-size: 1rem !important;
+  color: #f8b400 !important;
+  text-decoration: none !important;
+}
+
+.story-stats, 
+.story-products {
+  margin-top: 10px !important;
+  /* margin-right: 60px !important; */
+  font-size: 1rem !important;
+  display: flex !important;
+  justify-content: space-between !important; /* Adjusts spacing */
+  align-items: center !important;
+  padding: 0 20px !important; /* Adds left and right margin */
+}
+
+
+.story-img-container {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.story-img {
+  max-width: 100% !important;
+  max-height: 70%;
+  border-radius: 10px !important;
+}/* Default light mode */
+/* Default light mode */
+/* Default Light Mode */
